@@ -25,7 +25,7 @@ public class Secret extends ResourceMetadata {
 
     @Override
     public String toString() {
-        return String.format("Secret { path: %s, version: %d, lastModified: %s, lastModifiedBy: %s }", this.path,
-                this.version, super.getLastModified(), super.getLastModifiedBy());
+        return String.format("Secret { path: %s, version: %d, lastModified: %s, lastModifiedBy: %s, data: %s }", this.path,
+                this.version, super.getLastModified(), super.getLastModifiedBy(), this.data);
     }
 }
